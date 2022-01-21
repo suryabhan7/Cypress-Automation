@@ -1,24 +1,20 @@
 ///<reference types="cypress"/>
-
-
-
-
-
+import contactData from '../../fixtures/ContactFormData.json'
 
 describe('Automation of Contact us Test cases',()=>{
-    it('Automation of contact us form',()=>{
+    it.only('Automation of contact us form',()=>{
 
         cy.visit('http://webdriveruniversity.com/');
         cy.get('#contact-us').invoke('removeAttr', 'target').click()
-        cy.get('[name="first_name"]').type('suryabhan')
-        cy.get('[name="last_name"]').type('singh')
-        cy.get('[name="email"]').type('suryabhansingh1998@gmail.com')
-        cy.get('textarea.feedback-input').type('about reviews')
+        cy.get('[name="first_name"]').type(contactData.firstname);
+        cy.get('[name="last_name"]').type(contactData.lastname)
+        cy.get('[name="email"]').type(contactData.email)
+        cy.get('textarea.feedback-input').type(contactData.discription)
         cy.get('[type="submit"]').click();
         cy.end()
     })
 
-    it.skip('Practice new tab',()=>{
+    it('Practice new tab',()=>{
 
         cy.visit('https://the-internet.herokuapp.com/windows')
         cy.get('.example > a').click()
