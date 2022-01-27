@@ -2,10 +2,10 @@
 
 describe("ClearTrip UI",()=>{
    
-    beforeEach(()=>{
-       cy.visit("https://www.flipkart.com/");
-       cy.log("executing before each Testcase");  
-    })
+    //beforeEach(()=>{
+     //  cy.visit("https://www.flipkart.com/");
+      // cy.log("executing before each Testcase");  
+   // })
 
    
     it("Title vaildation",()=>{
@@ -26,5 +26,10 @@ describe("ClearTrip UI",()=>{
       //   cy.visit("www.flipkart.com")
         //cy.get(".exehdJ").trigger('mouseover');
      //})
+     it.only("Date picker",() =>{
+        cy.visit("http://www.makemytrip.com");
+        cy.contains("DEPARTURE").click();
+
+     })
 
 })
