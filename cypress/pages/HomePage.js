@@ -1,5 +1,6 @@
 ///<reference types ="cypress"/>
 
+//Css Selectors
 export const CLEARTRIP_LOGO = "[data-test-attrib='cleartrip-logo']"
 export const ONEWAY = '.radio__circle'
 export const CLEARTRIP_FROM_TO ='[placeholder="Any worldwide city or airport"]'
@@ -49,6 +50,8 @@ class homepage{
     verifyClearTripLogo(){
        this.getClearTripLogo().should('be.visible');
     }
+
+    //Verification Methods
 }
 
 export default homepage

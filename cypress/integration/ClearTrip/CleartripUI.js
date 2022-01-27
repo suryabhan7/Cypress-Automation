@@ -26,10 +26,11 @@ describe("ClearTrip UI",()=>{
       //   cy.visit("www.flipkart.com")
         //cy.get(".exehdJ").trigger('mouseover');
      //})
-     it.only("Date picker",() =>{
+     it("Date picker",() =>{
         cy.visit("http://www.makemytrip.com");
         cy.contains("DEPARTURE").click();
 
      })
 
 })
+   

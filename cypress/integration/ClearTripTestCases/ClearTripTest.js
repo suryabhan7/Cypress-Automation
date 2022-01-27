@@ -1,5 +1,5 @@
 import HomePage from '../../pages/HomePage'
- import Cleartripdata from '../../fixtures/ClearTripTestData.json'
+import Cleartripdata from '../../fixtures/ClearTripTestData.json'
 const homepage = new HomePage();
  
 describe('Testing ClearTrip Website',()=>{

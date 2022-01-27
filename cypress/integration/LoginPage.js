@@ -21,7 +21,7 @@ class LoginPage
      }
 
      submit(){
-         const submit=cy.get('.button-1')//
+         const submit=cy.get('.button-1').should('be.visible')//
          submit.click()
      }
 }
