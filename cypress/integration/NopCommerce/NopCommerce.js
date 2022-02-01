@@ -37,7 +37,7 @@ describe('User registration',() =>{
             //cy.get('#gift aid').should('be.visible').should('be', '€25 Virtual gift card');
         });
 
-        it.only('Predicted text search', () =>{
+        it('Predicted text search', () =>{
             cy.get('#small-searchterms').type('mac');
             cy.contains('Apple MacBook Pro 13-inch').click();
             
